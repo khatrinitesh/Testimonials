@@ -1,0 +1,198 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul,ol{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0 0 10px;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+.clr::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.fleft{
+	float: left;
+}
+
+.fright{
+	float: right;
+}
+
+.txt_center{
+	text-align: center;
+}
+
+.txt_right{
+	text-align: right;
+}
+
+.img_responsive{
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.img_rounded{
+	border-radius: 50%;
+}
+/* ============ FONT FAMILY ============ */
+/* ============ OPEN SANS REGULAR ============*/
+@font-face {
+  font-family: 'opensansregular';
+  src: url('../fonts/opensansregular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/opensansregular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/opensansregular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensansregular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/opensansregular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/opensansregular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* ============ OPEN SANS SEMIBOLD ============*/
+@font-face {
+  font-family: 'opensanssemibold';
+  src: url('../fonts/opensanssemibold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/opensanssemibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/opensanssemibold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensanssemibold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/opensanssemibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/opensanssemibold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* ============ OPEN SANS LIGHT ============*/
+@font-face {
+  font-family: 'opensanslight';
+  src: url('../fonts/opensanslight.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/opensanslight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/opensanslight.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/opensanslight.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/opensanslight.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/opensanslight.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* ============ GEORGIA ITALIC ============*/
+@font-face {
+  font-family: 'georgia_italic';
+  src: url('../fonts/georgia_italic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/georgia_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/georgia_italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/georgia_italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/georgia_italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/georgia_italic.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/*=========== START /*===========*/
+body{
+	font-family: 'opensansregular';
+	font-size: 14px;
+	background-color: #f4f4f4;
+}
+
+.container{
+	max-width: 942px;
+	margin: 0 auto;
+}
+
+.testimonials_block{
+	padding: 100px 0;
+}
+
+.testimonials_block .title{
+	margin-bottom: 50px;
+}
+
+.testimonials_block .title h2{
+	font-size: 40px;
+	font-family: 'opensanssemibold';
+	color: #384047;
+	margin-bottom: 25px;
+}
+
+.testimonials_block .title p{
+	font-size: 20px;
+	font-family: 'opensanslight';
+	color: #94a3a8;
+}
+
+.testimonials_block .list_testimonials li{
+	width: 48.83%;
+}
+
+.testimonials_block .list_testimonials .intro_content{
+	padding: 28px 26px;
+	background-color: #fff;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.testimonials_block .list_testimonials .intro_content::after{
+	content:"";
+	position: absolute;
+	left: 60px;
+	bottom: -20px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #fff;
+}
+
+.testimonials_block .list_testimonials .intro_content p{
+	font-size: 16px;
+	font-family: 'georgia_italic';
+	color: #94a3a8;
+	line-height: 26px;
+}
+
+.testimonials_block .list_testimonials .description img{
+	margin-right: 12px;
+}
+
+.testimonials_block .list_testimonials .description img,
+.testimonials_block .list_testimonials .description .author_desc{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.testimonials_block .list_testimonials .description .author_desc h3{
+	font-size: 16px;
+	font-family: 'opensanssemibold';
+	color: #384047;
+	margin-bottom: 3px;
+}
+
+.testimonials_block .list_testimonials .description .author_desc p{
+	color: #7e9096;
+	font-family: 'opensanslight';
+}
+
+.testimonials_block .list_testimonials .description .author_desc a{
+	color: #5173bd;
+}
+
+/* MOBILE SITE */
+@media (max-width: 667px){
+	.container{
+		padding: 0 15px;
+	}
+
+	.testimonials_block .list_testimonials li{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
